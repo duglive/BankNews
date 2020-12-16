@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let mainScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: mainScene)
         window?.overrideUserInterfaceStyle = .light
-        window?.rootViewController = ViewController()
+        window?.rootViewController = NewsAssembly().viewController
         window?.makeKeyAndVisible()
     }
 }
