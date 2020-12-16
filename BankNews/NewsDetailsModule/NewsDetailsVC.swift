@@ -41,6 +41,7 @@ class NewsDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         view.backgroundColor = .white
         
         model.load()

@@ -25,6 +25,7 @@ class NewsVC: UIViewController {
         super.viewDidLoad()
         
         setTitle()
+        configureNavigationController()
         
         configureRightBarItem()
         configureTableView()
@@ -34,6 +35,10 @@ class NewsVC: UIViewController {
     
     private func setTitle() {
         self.title = "Новости"
+    }
+    
+    private func configureNavigationController() {
+        navigationController?.navigationBar.tintColor = .systemGreen
     }
     
     private func configureTableView() {
